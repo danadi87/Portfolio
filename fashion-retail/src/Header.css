@@ -1,0 +1,14 @@
+.navbar {
+  font-size: 50px;
+  font-family: "Libre Barcode 128 Text", cursive;
+}
+.mx-auto {
+  color: chocolate;
+  font-family: "Libre Barcode 128 Text", cursive;
+}
+.brand {
+  font-family: "Libre Barcode 128 Text", cursive;
+  font-size: 50px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
