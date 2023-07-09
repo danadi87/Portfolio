@@ -7,13 +7,7 @@ import logo from "./STYKKER.png";
 export default function ShowNavbar() {
   return (
     <div className="navigationBar" href="#home">
-      <img
-        src={logo}
-        href="./STYKKER.png"
-        alt="logo"
-        className="logo"
-        width={60}
-      />
+      <img src={logo} href="./STYKKER.png" alt="logo" className="logo" />
       <nav>
         <div className="navigation">
           <ul className="navigationItems">
