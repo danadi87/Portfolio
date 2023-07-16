@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import carousel from "./carousel.css";
+import "./carousel.css";
+import { Children} from "react";
+
 
 export const CarouselItem = ({ children, width }) => {
   return (
@@ -23,7 +25,7 @@ const Carousel = ({ children }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       updateIndex(activeIndex + 1);
-    }, 1000);
+    }, 3000);
     return () => {
       if (interval) {
         clearInterval(interval);
