@@ -4,7 +4,6 @@ import Carousel, { CarouselItem } from "./Carousel.js";
 import "./carousel.css";
 import { Children } from "react";
 
-
 export default function App(Children) {
   return (
     <div className="App">
