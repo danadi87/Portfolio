@@ -3,7 +3,6 @@ import Header from "./Header";
 import Carousel from "./Carousel.js";
 import "./carousel.css";
 
-
 export default function App(Children) {
   return (
     <div className="App">

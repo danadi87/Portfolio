@@ -1,19 +1,15 @@
-import { useState } from "react";
-import { sculptureList } from "./data.js";
-import carousel from "./carousel.css";
+import "./carousel.css";
+import React from "react";
+
+function Profile() {
+  return <img src="https://ibb.co/V2nqc36" alt="Outfit 1" />;
+}
 
 export default function Gallery() {
-  const [index, setIndex] = useState(0);
-
-  function handleClick() {
-    setIndex(index + 1);
-  }
-
-  let sculpture = sculptureList[index];
   return (
-    <>
-      <button onClick={handleClick}>Next</button> 
-      <img src={sculpture.url} alt={sculpture.alt} />
-    </>
+    <section>
+      <h1>SHOP</h1>
+      <Profile />
+    </section>
   );
 }
