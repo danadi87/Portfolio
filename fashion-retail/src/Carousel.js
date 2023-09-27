@@ -3,10 +3,9 @@ import React, { useState } from "react";
 
 export default function Slider() {
   const containerstyles = {
-    height: "300px",
-    width: "700px",
-    marginTop: "15%",
-    marginLeft: "22%",
+    height: "1200px",
+    width: "1200px",
+    margingBottom: "15%",
   };
   const images = [
     "outfit1.png",
@@ -23,6 +22,7 @@ export default function Slider() {
     backgroundImage: `url(${images[index]})`,
     height: "1200px",
     backgroundSize: "cover",
+    width: "100%",
   };
   return (
     <div images={images} style={containerstyles} className="container">
@@ -41,7 +41,11 @@ export default function Slider() {
             }
           }}
         >
-          <img src="backwards.186x256.png" alt="backwards" />
+          <img
+            className="carousel-button"
+            src="backwards.186x256.png"
+            alt="backwards"
+          />
         </div>
         <div
           style={{
@@ -57,7 +61,11 @@ export default function Slider() {
             }
           }}
         >
-          <img src="forward.186x256.png" alt="forward" />
+          <img
+            className="carousel-button"
+            src="forward.186x256.png"
+            alt="forward"
+          />
         </div>
       </div>
     </div>
