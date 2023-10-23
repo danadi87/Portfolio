@@ -41,11 +41,7 @@ export default function Slider() {
             }
           }}
         >
-          <img
-            className="carousel-button"
-            src="backwards.186x256.png"
-            alt="backwards"
-          />
+          <img className="carousel-button" src="Back.svg" alt="backwards" />
         </div>
         <div
           style={{
@@ -61,11 +57,7 @@ export default function Slider() {
             }
           }}
         >
-          <img
-            className="carousel-button"
-            src="forward.186x256.png"
-            alt="forward"
-          />
+          <img className="carousel-button" src="Next.svg" alt="forward" />
         </div>
       </div>
     </div>

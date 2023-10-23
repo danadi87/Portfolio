@@ -13,6 +13,7 @@ export default function FooterBar() {
         <Row>
           <Col>
             <p>
+              <br />
               <h3>STŸKKER</h3>
               El Prat de Llobregat
               <br />
@@ -29,23 +30,45 @@ export default function FooterBar() {
                   target="_blank"
                   rel="noopener"
                 >
-                  Instagram
+                  <img
+                    className="Instagram"
+                    src="Instagram.svg"
+                    alt="Instagram"
+                    width="30%"
+                    href="https://www.instagram.com/danadi_87/"
+                    target="_blank"
+                    rel="noopener"
+                  />
                 </a>
-                <p>&nbsp;</p>
                 <a
                   href="https://www.facebook.com/danadi_87/"
                   target="_blank"
                   rel="noopener"
                 >
-                  Facebook
+                  <img
+                    className="Facebook"
+                    src="Facebook.svg"
+                    alt="Facebook"
+                    width="30%"
+                    href="https://www.facebook.com/danadi_87/"
+                    target="_blank"
+                    rel="noopener"
+                  />
                 </a>
-                <p>&nbsp;</p>
                 <a
                   href="https://www.pinterest.com/mireladaniela/"
                   target="_blank"
                   rel="noopener"
                 >
-                  Pinterest
+                  <img
+                    className="Pinterest"
+                    src="Pinterest.svg"
+                    alt="Pinterest"
+                    width="30%"
+                    href="https://www.pinterest.com/mireladaniela/"
+                    target="_blank"
+                    rel="noopener"
+                  />
                 </a>
               </p>
             </p>
@@ -53,7 +76,9 @@ export default function FooterBar() {
           <Col>
             <ListGroup as="ul">
               <li>
-                <strong>Customer service</strong>
+                <h4>
+                  <strong>Customer service</strong>
+                </h4>
               </li>
               <li>FAQs</li>
               <li>Shipping/deliveries</li>
@@ -63,7 +88,9 @@ export default function FooterBar() {
           <Col>
             <ListGroup as="ul">
               <li>
-                <strong>Legal Area</strong>
+                <h4>
+                  <strong>Legal Area</strong>
+                </h4>
               </li>
               <li>Contact us</li>
               <li>Cookie Policy</li>
@@ -73,7 +100,9 @@ export default function FooterBar() {
           <Col>
             <ListGroup as="ul">
               <li>
-                <strong>Join our list</strong>
+                <h4>
+                  <strong>Join our list</strong>
+                </h4>
               </li>
               <form>
                 <div>
