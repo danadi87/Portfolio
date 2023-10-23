@@ -1,0 +1,16 @@
+.col-xs-6 {
+  width: 50%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+}
+.links {
+  display: block;
+  padding: 15px;
+}
+.ul {
+  display: block;
+  list-style: none;
+  padding-left: 0px;
+  margin: 0 0 50px 0;
+}
