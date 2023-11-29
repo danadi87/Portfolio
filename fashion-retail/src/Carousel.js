@@ -8,7 +8,7 @@ export default function Slider() {
     margingBottom: "15%",
   };
   const images = [
-    "outfit1.png",
+    "outfit11.png",
     "outfit2.png",
     "outfit3.png",
     "outfit4.png",
@@ -20,10 +20,11 @@ export default function Slider() {
   const [index, setIndex] = useState(0);
   const slidestyles = {
     backgroundImage: `url(${images[index]})`,
-    height: "1200px",
-    backgroundSize: "cover",
+    height: "800px",
+    backgroundSize: "50%",
     width: "100%",
   };
+
   return (
     <div images={images} style={containerstyles} className="container">
       <div style={slidestyles}>
