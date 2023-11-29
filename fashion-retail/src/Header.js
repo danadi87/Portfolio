@@ -3,6 +3,7 @@ import Header from "./Header.css";
 import Navbar from "react-bootstrap/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./STYKKER.png";
+import Signin from "./Signin";
 
 export default function ShowNavbar() {
   return (
@@ -37,8 +38,8 @@ export default function ShowNavbar() {
               </a>
             </li>
             <li>
-              <a href="#pricing" className="services">
-                Sign in
+              <a href="Signin.js" className="services">
+                Login
               </a>
             </li>
           </ul>
