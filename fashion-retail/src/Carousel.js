@@ -3,8 +3,8 @@ import React, { useState } from "react";
 
 export default function Slider() {
   const containerstyles = {
-    height: "100%",
-    width: "100%",
+    height: "80%",
+    width: "80%",
     margingBottom: "15%",
   };
   const images = [
