@@ -1,5 +1,4 @@
 import React from "react";
-<<<<<<< Updated upstream
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
@@ -26,9 +25,4 @@ export default function Signin() {
       </Button>
     </Form>
   );
-=======
-
-export default function Login() {
-  return <div id="page">Sign in</div>;
->>>>>>> Stashed changes
 }

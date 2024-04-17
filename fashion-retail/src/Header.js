@@ -1,66 +1,51 @@
 import React from "react";
-import Header from "./Header.css";
+import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./STYKKER.png";
-import Signin from "./Signin";
-<<<<<<< Updated upstream
-=======
-import ShoppingCart from "./ShoppingCart";
-import About from "./About";
-import Collections from "./Collections";
-import Sustainability from "./Sustainability";
-import Contact from "./Contact";
-import Main from "./Main";
->>>>>>> Stashed changes
 
 export default function ShowNavbar() {
   return (
-    <div className="navigationBar">
-      <a classname="active" href="./src/Main.js">
-        <img src={logo} href="./STYKKER.png" alt="logo" className="logo" />
-      </a>
+    <Navbar className="navigationBar">
+      <Navbar.Brand as={Link} to="/Main">
+        <img src={logo} alt="logo" className="logo" />
+      </Navbar.Brand>
       <nav>
         <div className="navigation">
           <ul className="navigationItems">
             <li>
-              <a className="services" href="./src/About.js">
+              <Link to="/About" className="services">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="./src/Collections.js" className="services">
+              <Link to="/Collections" className="services">
                 Collections
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="./src/Sustainability.js" className="services">
+              <Link to="/Sustainability" className="services">
                 Sustainability
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="./src/Contact.js" className="services">
+              <Link to="/Contact" className="services">
                 Contact
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="./src/ShoppingCart.js" className="services">
+              <Link to="/ShoppingCart" className="services">
                 Shopping cart
-              </a>
+              </Link>
             </li>
             <li>
-<<<<<<< Updated upstream
-              <a href="Signin.js" className="services">
-                Login
-=======
-              <a href="./src/Signin.js" className="services">
+              <Link to="/Signin" className="services">
                 Sign in
->>>>>>> Stashed changes
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
       </nav>
-    </div>
+    </Navbar>
   );
 }
