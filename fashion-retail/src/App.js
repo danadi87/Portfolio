@@ -2,30 +2,54 @@ import "./App.css";
 import Header from "./Header.js";
 import Footer from "./Footer.js";
 import Data from "./data.js";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Aboutpage from "./About.js";
-import Collectionspage from "./Collections.js";
-import Contactpage from "./Contact.js";
-import Homepagepage from "./Homepage.js";
-import Signinpage from "./Signin.js";
-import Shoppingcartpage from "./ShoppingCart.js";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import About from "./About.js";
+import Collections from "./Collections.js";
+import Contact from "./Contact.js";
+import Homepage from "./Homepage.js";
+import Signin from "./Signin.js";
+import Shoppingcart from "./ShoppingCart.js";
 
 export default function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/About" Component={Aboutpage} />
-        <Route path="/Collections" Component={Collectionspage} />
-        <Route path="/Contact" Component={Contactpage} />
-        <Route path="/Homepage" Component={Homepagepage} />
-        <Route path="/Signin" Component={Signinpage} />
-        <Route path="/ShoppingCart" Component={Shoppingcartpage} />
-      </Switch>
       <div className="App">
-        <Header />
-        <Data />
-        <Footer />
+        <Routes />
       </div>
     </Router>
   );
+
+  function Routes() {
+    return (
+      <div>
+        <Route path="/" exact component={Homepage} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/collections" component={Collections} />
+        <Route path="/signin" component={Signin} />
+        <Route path="/shoppingcart" component={Shoppingcart} />
+      </div>
+    );
+  }
+
+  function Home() {
+    return <h1>Home Page</h1>;
+  }
+
+  function About() {
+    return <h1>About Page</h1>;
+  }
+
+  function Contact() {
+    return <h1>Contact Page</h1>;
+  }
+  function Collections() {
+    return <h1>Contact Page</h1>;
+  }
+  function Signin() {
+    return <h1>Contact Page</h1>;
+  }
+  function Shoppingcart() {
+    return <h1>Contact Page</h1>;
+  }
 }
