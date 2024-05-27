@@ -1,8 +1,6 @@
 import "./App.css";
-import Header from "./Header.js";
-import Footer from "./Footer.js";
 import Data from "./data.js";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./About.js";
 import Collections from "./Collections.js";
 import Contact from "./Contact.js";
@@ -13,24 +11,16 @@ import Shoppingcart from "./ShoppingCart.js";
 export default function App() {
   return (
     <Router>
-      <div className="App">
-        <Routes />
-      </div>
-    </Router>
-  );
-
-  function Routes() {
-    return (
-      <div>
+      <Routes>
         <Route path="/" exact component={Homepage} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/collections" component={Collections} />
         <Route path="/signin" component={Signin} />
         <Route path="/shoppingcart" component={Shoppingcart} />
-      </div>
-    );
-  }
+        </Routes>
+    </Router>
+  );
 
   function Home() {
     return <h1>Home Page</h1>;
