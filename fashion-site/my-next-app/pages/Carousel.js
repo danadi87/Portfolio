@@ -1,7 +1,16 @@
 import "./carousel.css";
 import React, { useState } from "react";
 
+
 export default function Slider() {
+  const containerStyles = {
+    height: "80%",
+    width: "80%",
+    marginBottom: "15%",
+    position: "relative",
+    overflow: "hidden",
+  };
+
   const images = [
     "outfit11.png",
     "outfit2.png",
@@ -14,6 +23,7 @@ export default function Slider() {
   ];
 
   const [index, setIndex] = useState(0);
+    console.log("Current image path:", images[index]);
 
   const handleNext = () => {
     setIndex((prevIndex) =>
@@ -29,10 +39,9 @@ export default function Slider() {
 
   const slideStyles = {
     backgroundImage: `url(${images[index]})`,
+    height: "800px",
     backgroundSize: "contain",
     backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    height: "400px",
     width: "100%",
     transition: "background-image 0.5s ease-in-out",
   };
@@ -46,23 +55,18 @@ export default function Slider() {
     background: "rgba(255, 255, 255, 0.5)",
     padding: "10px",
     borderRadius: "50%",
-  };
-
-  const containerStyles = {
-    position: "relative",
-    width: "80%",
-    margin: "0 auto",
-    marginBottom: "15%",
+    zIndex: 1,
   };
 
   return (
-    <div style={containerStyles}>
-      <div style={slideStyles}></div>
-      <div style={{ ...buttonStyles, left: "20px" }} onClick={handlePrev}>
-        <img className="carousel-button" src="Back.svg" alt="backwards" />
-      </div>
-      <div style={{ ...buttonStyles, right: "20px" }} onClick={handleNext}>
-        <img className="carousel-button" src="Next.svg" alt="forward" />
+    <div style={containerStyles} className="container">
+      <div style={slideStyles}>
+        <div style={{ ...buttonStyles, left: "20px" }} onClick={handlePrev}>
+          <img className="carousel-button" src="Back.svg" alt="backwards" />
+        </div>
+        <div style={{ ...buttonStyles, right: "20px" }} onClick={handleNext}>
+          <img className="carousel-button" src="Next.svg" alt="forward" />
+        </div>
       </div>
     </div>
   );

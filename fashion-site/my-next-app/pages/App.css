@@ -1,0 +1,23 @@
+/* App.css */
+.navigationBar {
+  background: none;
+  overflow: hidden;
+}
+
+.logo {
+  height: 100px;
+}
+
+.services {
+  margin: 0 15px;
+}
+
+.navigationItems {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.navigationItems li {
+  margin: 0 10px;
+}

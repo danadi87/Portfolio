@@ -1,0 +1,18 @@
+.col-xs-6 {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.links {
+  display: block;
+  padding: 15px;
+}
+.ul {
+  display: block;
+  list-style: none;
+  padding-left: 0px;
+  line-height: 1px !important;
+}
+.col {
+  color: rgb(101, 38, 38);
+}
